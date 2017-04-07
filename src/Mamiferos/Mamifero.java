@@ -19,7 +19,7 @@ public class Mamifero{
         }
     }
       
-    public class Gato extends Mamifero {
+    static class Gato extends Mamifero {
         public Gato(String nombre){
           super(nombre, 4);
         }
@@ -29,6 +29,8 @@ public class Mamifero{
     public static void main(String[] args) {
         Perro perrito = new Perro("Pantaleon");
         perrito.imprimirPatas();
+        Gato gatito = new Gato("Michifus");
+        gatito.imprimirPatas();
       }   
 
 }
